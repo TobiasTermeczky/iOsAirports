@@ -58,7 +58,7 @@ class AirportDatabase: NSObject {
         
         var airports = [Airport]()
         
-        let query = "SELECT * FROM airports WHERE iso_country = \"\(iso_country)\""
+        let query = "SELECT * FROM airports WHERE iso_country = \"\(iso_country)\" LIMIT 10"
         
         var statement : OpaquePointer? = nil
         if sqlite3_prepare_v2(db, query, -1, &statement, nil) != SQLITE_OK {

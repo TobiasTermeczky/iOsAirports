@@ -14,6 +14,8 @@
 		F67804191F9637CD00141D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67804171F9637CD00141D09 /* LaunchScreen.storyboard */; };
 		F67804241F9637CE00141D09 /* AirportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67804231F9637CE00141D09 /* AirportsTests.swift */; };
 		F678042F1F9637CE00141D09 /* AirportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678042E1F9637CE00141D09 /* AirportsUITests.swift */; };
+		F690BA0C1F96C63E00A7BA6F /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690BA0A1F96C63E00A7BA6F /* AirportDetailViewController.swift */; };
+		F690BA0D1F96C63E00A7BA6F /* AirportDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F690BA0B1F96C63E00A7BA6F /* AirportDetailViewController.xib */; };
 		F6C4C9CC1F9643C100AA8510 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9CB1F9643C100AA8510 /* Airport.swift */; };
 		F6C4C9CE1F9644B200AA8510 /* AirportDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9CD1F9644B200AA8510 /* AirportDatabase.swift */; };
 		F6C4C9D01F96475200AA8510 /* airports.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F6C4C9CF1F96475200AA8510 /* airports.sqlite */; };
@@ -52,6 +54,8 @@
 		F678042A1F9637CE00141D09 /* AirportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F678042E1F9637CE00141D09 /* AirportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsUITests.swift; sourceTree = "<group>"; };
 		F67804301F9637CE00141D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F690BA0A1F96C63E00A7BA6F /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
+		F690BA0B1F96C63E00A7BA6F /* AirportDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportDetailViewController.xib; sourceTree = "<group>"; };
 		F6C4C9CB1F9643C100AA8510 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		F6C4C9CD1F9644B200AA8510 /* AirportDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDatabase.swift; sourceTree = "<group>"; };
 		F6C4C9CF1F96475200AA8510 /* airports.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = airports.sqlite; path = ../../../../Downloads/airports.sqlite; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		F678040D1F9637CD00141D09 /* Airports */ = {
 			isa = PBXGroup;
 			children = (
+				F690BA091F96C60B00A7BA6F /* AirportDetailVC */,
 				F6C4C9D71F964EBB00AA8510 /* ExpandableHeaderView */,
 				F6C4C9CA1F9643A500AA8510 /* Model */,
 				F678040E1F9637CD00141D09 /* AppDelegate.swift */,
@@ -140,6 +145,15 @@
 				F67804301F9637CE00141D09 /* Info.plist */,
 			);
 			path = AirportsUITests;
+			sourceTree = "<group>";
+		};
+		F690BA091F96C60B00A7BA6F /* AirportDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				F690BA0A1F96C63E00A7BA6F /* AirportDetailViewController.swift */,
+				F690BA0B1F96C63E00A7BA6F /* AirportDetailViewController.xib */,
+			);
+			path = AirportDetailVC;
 			sourceTree = "<group>";
 		};
 		F6C4C9CA1F9643A500AA8510 /* Model */ = {
@@ -277,6 +291,7 @@
 			files = (
 				F6C4C9D01F96475200AA8510 /* airports.sqlite in Resources */,
 				F67804191F9637CD00141D09 /* LaunchScreen.storyboard in Resources */,
+				F690BA0D1F96C63E00A7BA6F /* AirportDetailViewController.xib in Resources */,
 				F67804161F9637CD00141D09 /* Assets.xcassets in Resources */,
 				F67804141F9637CD00141D09 /* Main.storyboard in Resources */,
 			);
@@ -308,6 +323,7 @@
 				F6C4C9CC1F9643C100AA8510 /* Airport.swift in Sources */,
 				F67804111F9637CD00141D09 /* ViewController.swift in Sources */,
 				F6C4C9CE1F9644B200AA8510 /* AirportDatabase.swift in Sources */,
+				F690BA0C1F96C63E00A7BA6F /* AirportDetailViewController.swift in Sources */,
 				F678040F1F9637CD00141D09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
