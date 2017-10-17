@@ -15,6 +15,10 @@
 		F67804241F9637CE00141D09 /* AirportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67804231F9637CE00141D09 /* AirportsTests.swift */; };
 		F678042F1F9637CE00141D09 /* AirportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678042E1F9637CE00141D09 /* AirportsUITests.swift */; };
 		F6C4C9CC1F9643C100AA8510 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9CB1F9643C100AA8510 /* Airport.swift */; };
+		F6C4C9CE1F9644B200AA8510 /* AirportDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9CD1F9644B200AA8510 /* AirportDatabase.swift */; };
+		F6C4C9D01F96475200AA8510 /* airports.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F6C4C9CF1F96475200AA8510 /* airports.sqlite */; };
+		F6C4C9D91F964ED000AA8510 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9D81F964ED000AA8510 /* Section.swift */; };
+		F6C4C9DB1F964F9700AA8510 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9DA1F964F9700AA8510 /* ExpandableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,12 @@
 		F678042E1F9637CE00141D09 /* AirportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsUITests.swift; sourceTree = "<group>"; };
 		F67804301F9637CE00141D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6C4C9CB1F9643C100AA8510 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		F6C4C9CD1F9644B200AA8510 /* AirportDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDatabase.swift; sourceTree = "<group>"; };
+		F6C4C9CF1F96475200AA8510 /* airports.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = airports.sqlite; path = ../../../../Downloads/airports.sqlite; sourceTree = "<group>"; };
+		F6C4C9D31F9648F900AA8510 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F6C4C9D41F96490900AA8510 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F6C4C9D81F964ED000AA8510 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		F6C4C9DA1F964F9700AA8510 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 				F67804221F9637CE00141D09 /* AirportsTests */,
 				F678042D1F9637CE00141D09 /* AirportsUITests */,
 				F678040C1F9637CD00141D09 /* Products */,
+				F6C4C9D21F9648F900AA8510 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +110,16 @@
 		F678040D1F9637CD00141D09 /* Airports */ = {
 			isa = PBXGroup;
 			children = (
+				F6C4C9D71F964EBB00AA8510 /* ExpandableHeaderView */,
 				F6C4C9CA1F9643A500AA8510 /* Model */,
 				F678040E1F9637CD00141D09 /* AppDelegate.swift */,
 				F67804101F9637CD00141D09 /* ViewController.swift */,
 				F67804121F9637CD00141D09 /* Main.storyboard */,
+				F6C4C9CF1F96475200AA8510 /* airports.sqlite */,
 				F67804151F9637CD00141D09 /* Assets.xcassets */,
 				F67804171F9637CD00141D09 /* LaunchScreen.storyboard */,
 				F678041A1F9637CD00141D09 /* Info.plist */,
+				F6C4C9CD1F9644B200AA8510 /* AirportDatabase.swift */,
 			);
 			path = Airports;
 			sourceTree = "<group>";
@@ -134,6 +148,24 @@
 				F6C4C9CB1F9643C100AA8510 /* Airport.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F6C4C9D21F9648F900AA8510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C4C9D41F96490900AA8510 /* libsqlite3.tbd */,
+				F6C4C9D31F9648F900AA8510 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6C4C9D71F964EBB00AA8510 /* ExpandableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F6C4C9D81F964ED000AA8510 /* Section.swift */,
+				F6C4C9DA1F964F9700AA8510 /* ExpandableHeaderView.swift */,
+			);
+			path = ExpandableHeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C4C9D01F96475200AA8510 /* airports.sqlite in Resources */,
 				F67804191F9637CD00141D09 /* LaunchScreen.storyboard in Resources */,
 				F67804161F9637CD00141D09 /* Assets.xcassets in Resources */,
 				F67804141F9637CD00141D09 /* Main.storyboard in Resources */,
@@ -270,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C4C9D91F964ED000AA8510 /* Section.swift in Sources */,
+				F6C4C9DB1F964F9700AA8510 /* ExpandableHeaderView.swift in Sources */,
 				F6C4C9CC1F9643C100AA8510 /* Airport.swift in Sources */,
 				F67804111F9637CD00141D09 /* ViewController.swift in Sources */,
+				F6C4C9CE1F9644B200AA8510 /* AirportDatabase.swift in Sources */,
 				F678040F1F9637CD00141D09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

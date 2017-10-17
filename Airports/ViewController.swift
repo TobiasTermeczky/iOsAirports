@@ -8,10 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var tableData = [Airport]()
+    var sections = [Section]()
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let adb = AirportDatabase.sharedInstance
+        self.tableData = adb.getAirportsByIso("NL")!
+        print(tableData.count)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
