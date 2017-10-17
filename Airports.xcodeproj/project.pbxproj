@@ -14,6 +14,7 @@
 		F67804191F9637CD00141D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67804171F9637CD00141D09 /* LaunchScreen.storyboard */; };
 		F67804241F9637CE00141D09 /* AirportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67804231F9637CE00141D09 /* AirportsTests.swift */; };
 		F678042F1F9637CE00141D09 /* AirportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678042E1F9637CE00141D09 /* AirportsUITests.swift */; };
+		F6C4C9CC1F9643C100AA8510 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4C9CB1F9643C100AA8510 /* Airport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F678042A1F9637CE00141D09 /* AirportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F678042E1F9637CE00141D09 /* AirportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsUITests.swift; sourceTree = "<group>"; };
 		F67804301F9637CE00141D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C4C9CB1F9643C100AA8510 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		F678040D1F9637CD00141D09 /* Airports */ = {
 			isa = PBXGroup;
 			children = (
+				F6C4C9CA1F9643A500AA8510 /* Model */,
 				F678040E1F9637CD00141D09 /* AppDelegate.swift */,
 				F67804101F9637CD00141D09 /* ViewController.swift */,
 				F67804121F9637CD00141D09 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				F67804301F9637CE00141D09 /* Info.plist */,
 			);
 			path = AirportsUITests;
+			sourceTree = "<group>";
+		};
+		F6C4C9CA1F9643A500AA8510 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6C4C9CB1F9643C100AA8510 /* Airport.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C4C9CC1F9643C100AA8510 /* Airport.swift in Sources */,
 				F67804111F9637CD00141D09 /* ViewController.swift in Sources */,
 				F678040F1F9637CD00141D09 /* AppDelegate.swift in Sources */,
 			);
