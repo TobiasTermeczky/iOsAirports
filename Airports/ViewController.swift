@@ -75,8 +75,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let adb = AirportDatabase.sharedInstance
         let airportDetailVC = AirportDetailViewController()
-        airportDetailVC.customInit(airport: sections[indexPath.section].airports[indexPath.row])
+        airportDetailVC.customInit(airport: sections[indexPath.section].airports[indexPath.row], schiphol: adb.getSchiphol())
         tableView.deselectRow(at: indexPath, animated: true)
         self.navigationController?.pushViewController(airportDetailVC, animated: true)
     }

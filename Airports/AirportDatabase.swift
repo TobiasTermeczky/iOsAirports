@@ -85,4 +85,31 @@ class AirportDatabase: NSObject {
         
         return airports
     }
+    
+    func getSchiphol() -> Airport {
+        let airport = Airport()
+        
+        let query = "SELECT * FROM airports WHERE icao = 'EHAM'"
+        
+        var statement : OpaquePointer? = nil
+        if sqlite3_prepare_v2(db, query, -1, &statement, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db))
+            print("error query: \(errmsg)")
+            return airport
+        }
+        
+        while sqlite3_step(statement) == SQLITE_ROW {
+            airport.icao = String(cString: sqlite3_column_text(statement, 0))
+            airport.name = String(cString: sqlite3_column_text(statement, 1))
+            
+            airport.longitude = sqlite3_value_double(sqlite3_column_value(statement, 2))
+            airport.latitude = sqlite3_value_double(sqlite3_column_value(statement, 3))
+            airport.elevation = sqlite3_value_double(sqlite3_column_value(statement, 4))
+            
+            airport.iso_country = String(cString: sqlite3_column_text(statement, 5))
+            airport.municipality = String(cString: sqlite3_column_text(statement, 6))
+        }
+        
+        return airport
+    }
 }

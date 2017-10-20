@@ -19,6 +19,7 @@
                 <outlet property="iso_country" destination="F1U-6u-2JU" id="v1n-EU-KWu"/>
                 <outlet property="latitude" destination="XbJ-My-iN5" id="75m-PZ-SRc"/>
                 <outlet property="longitude" destination="yNa-MY-lqi" id="mbb-4O-mhw"/>
+                <outlet property="mapView" destination="6vN-I6-3xj" id="OfB-Db-FtY"/>
                 <outlet property="municipality" destination="zvh-is-qKC" id="Kim-T9-N0z"/>
                 <outlet property="name" destination="xxR-4M-t84" id="V5v-dx-nlV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
